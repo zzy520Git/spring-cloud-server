@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: www.zzy.com
+  client:
+    # 声明是否将自己的注册信息注册到eureka服务器，默认true
+    register-with-eureka: false   #因为默认情况下一个eureka-server也是一个eureka-client,所以设置注册eureka为false
+    # 是否到eureka服务器抓取注册信息，默认true
+    fetch-registry: false
+    service-url:
+      defalutZone: http://www.zzy.com:8761/eureka
