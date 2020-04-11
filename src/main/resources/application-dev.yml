@@ -11,3 +11,8 @@ eureka:
     fetch-registry: false
     service-url:
       defalutZone: http://www.zzy.com:8761/eureka
+  server:
+    # 定时器清理注册表的清理间隔，单位毫秒，默认60秒
+    eviction-interval-timer-in-ms: 60000
+    # 是否开启自我保护模式，默认true
+    enable-self-preservation: true
